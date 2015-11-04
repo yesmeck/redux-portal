@@ -9,7 +9,7 @@ var Portal = React.createClass({
   },
 
   componentWillMount() {
-    if (this.props.portal.active) {
+    if (this.props.portal.active || this.props.isOpened) {
       this.openPortal();
     }
   },
